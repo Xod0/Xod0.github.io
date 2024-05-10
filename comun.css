@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Timmana:wght@400&display=swap');
+@import url('https://EJEMPLO_SITIO.com/fonts/sc-sedan.css');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+
+
+
+
+:root{
+    --Negro: #33363d;
+    --Blanco: #ffffff;
+    --Beige: #cfb997;
+    --EarthyCane:  #d5d1c3;
+    --Cafe: #a06c3f;
+    --SwanBlanco: #f8f3e6;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Timmana", sans-serif;
+}
+
+body, input{
+    color: var(--Negro);
+    background-color: var();
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1900px;
+    padding: 0 20px;
+}
+.input{
+    border: none;
+    font-size: 1.1rem;
+    background-color: var(--Negro);
+    padding: 10px;
+    outline: none;
+    color: var(--Cafe);
+    border-radius: 5px; 
+}
+.button{
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 8px 40px;
+    border-radius: 15px;
+}
+.button-primary{
+    color: var(--Blanco);
+    background-color: var(--Beige);
+}
+.button-primary:hover{
+    color: var(--);
+    background-color: var(--EarthyCane);
+    transition: background-color 0.1s ease-in-out;
+}

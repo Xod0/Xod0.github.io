@@ -1,0 +1,10 @@
+aside{
+    float: left;
+    width: 200px;
+    padding: 20px;
+    background-color: var(--Beige);
+    margin-top: 50px;
+    box-sizing: border-box;
+    color: var(--Blanco);
+    text-align: center;
+}

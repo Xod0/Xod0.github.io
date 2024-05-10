@@ -1,0 +1,121 @@
+@import url(styles.css);
+
+.galeria_section{
+    background-color: var(--Blanco);
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.galeria_cards{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contenido__card-info{
+    max-width: 1500px;
+}
+
+.contenido__card-info h2{
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--pink);
+}
+.contenido__card-info p{
+    font-size: 1.1rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.ojitos{
+    border: solid 1px var(--Beige);
+    max-width: 1350px;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    background-color: var(--Beige);
+}
+
+.ojitos img{
+    align-items: center;
+}
+
+
+.card {
+    position: relative;
+    width: 325px;
+    height: 400px;
+    margin : 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.card .front img {
+    position:relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: var(--SwanBlanco);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: var(--Beige);
+    padding: 15px;
+    color: var(--SwanBlanco);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #f3f3f3;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+} 
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
